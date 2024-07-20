@@ -10,7 +10,7 @@ import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
     const { theme, toggleTheme } = useTheme();
-    
+
     const themeIcon = theme === 'light' ? sun : moon;
     const githubIcon = theme === 'light' ? githubLight : githubDark;
     const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
@@ -19,8 +19,8 @@ function Hero() {
     <section id="hero" className={styles.container}>
         <div className={styles.colorModeContainer}>
             <img
-                className={styles.hero}
                 src={lauraAvatar}
+                className={styles.hero}
                 alt="Profile picture"
             />
             <img
@@ -31,8 +31,8 @@ function Hero() {
             />
         </div>
         <div className={styles.info}>
-            <h1>Laura<br />Hwa</h1>
-            <h2>Creator, Data Scientist</h2>
+            <h1>Laura Hwa</h1>
+            <h2>Creator, computer science student</h2>
             <span>
                 <a href="https://github.com/" target="lauraahwa">
                     <img src={githubIcon} alt="Github icon" />
@@ -41,9 +41,9 @@ function Hero() {
                     <img src={linkedinIcon} alt="Linkedin icon" />
                 </a>
             </span>
-            <p>
-                I'm curious about how tech affects the way humans respond to the world <br></br>
-                and how data-driven insights can power changes in human behavior.
+            <p className={styles.description}>
+                I'm curious about how data-driven insights can be used to understand 
+                human behavior and power change.
             </p>
 
         </div>
